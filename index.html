@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#10131c">
+<title>MaherChat Shop</title>
+<style>
+:root{--bg:#0b0d14;--panel:#151925;--panel2:#1d2332;--text:#f6f7fb;--muted:#aab2c4;--accent:#7c5cff;--accent2:#22c7a9;--line:#2a3143}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#1b1c36 0,#0b0d14 48%);color:var(--text);font:15px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;min-height:100vh}
+.wrap{max-width:760px;margin:auto;padding:18px 16px 32px}.top{display:flex;align-items:center;gap:12px;margin:4px 0 24px}.brandmark{width:48px;height:48px;border-radius:16px;background:linear-gradient(135deg,var(--accent),#22c7a9);display:grid;place-items:center;font-weight:900;font-size:20px;box-shadow:0 8px 28px #7c5cff40}.brand{font-size:19px;font-weight:800;letter-spacing:.2px}.sub{color:var(--muted);font-size:12px}.pill{margin-left:auto;border:1px solid var(--line);border-radius:999px;padding:7px 10px;color:#bff8eb;font-size:11px;background:#152b2b}
+.hero{border:1px solid #34314f;background:linear-gradient(135deg,#201b3b,#17242f);padding:22px;border-radius:24px;margin-bottom:22px}.eyebrow{color:#c7baff;text-transform:uppercase;font-size:11px;letter-spacing:1.5px;font-weight:800}.hero h1{font-size:29px;line-height:1.12;margin:10px 0}.hero p{color:#c3c9d7;margin:0 0 18px}.support{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;color:white;background:var(--accent);padding:12px 16px;border-radius:13px;font-weight:750}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:10px;margin:24px 0 12px}.sectionhead h2{font-size:18px;margin:0}.sectionhead span{font-size:12px;color:var(--muted)}.search{width:100%;border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:13px 14px;color:var(--text);font:inherit;outline:none;margin-bottom:14px}.filters{display:flex;gap:8px;overflow:auto;padding-bottom:6px;margin-bottom:14px}.filter{white-space:nowrap;border:1px solid var(--line);border-radius:999px;padding:8px 12px;background:var(--panel);color:#d6d9e3;font:inherit;font-size:12px}.filter.active{background:#34265e;border-color:#8b73ff;color:white}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{border:1px solid var(--line);background:linear-gradient(160deg,#171c29,#11141d);border-radius:18px;padding:15px;display:flex;flex-direction:column;min-height:190px}.producticon{width:45px;height:45px;border-radius:14px;background:var(--panel2);display:grid;place-items:center;font-size:23px;margin-bottom:12px}.card h3{font-size:15px;margin:0 0 5px}.card p{font-size:12px;color:var(--muted);margin:0 0 15px;flex:1}.order{display:block;text-align:center;text-decoration:none;border:1px solid #6551bf;background:#2c2450;color:#fff;padding:10px 8px;border-radius:11px;font-size:12px;font-weight:750}.note{font-size:12px;color:var(--muted);margin-top:18px;padding:14px;border:1px solid var(--line);border-radius:14px;background:#11141d}.footer{text-align:center;color:#737e95;font-size:11px;margin:22px 0 4px}.empty{color:var(--muted);padding:20px;text-align:center;display:none}
+@media(min-width:600px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero h1{font-size:36px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="top">
+    <div class="brandmark">M</div>
+    <div><div class="brand">MaherChat Shop</div><div class="sub">Premium digital products</div></div>
+    <div class="pill">● SUPPORT ONLINE</div>
+  </header>
+  <section class="hero">
+    <div class="eyebrow">Your digital store</div>
+    <h1>Upgrade your digital life.</h1>
+    <p>Explore subscriptions and digital tools with friendly support and order assistance.</p>
+    <a class="support" href="https://t.me/maherChatt" target="_blank" rel="noopener">💬 Contact Support</a>
+  </section>
+  <div class="sectionhead"><h2>Explore catalog</h2><span id="count">7 categories</span></div>
+  <input class="search" id="search" type="search" placeholder="Search products…" aria-label="Search products">
+  <nav class="filters" aria-label="Product filters">
+    <button class="filter active" data-filter="All">All</button>
+    <button class="filter" data-filter="AI Tools">AI Tools</button>
+    <button class="filter" data-filter="Entertainment">Entertainment</button>
+    <button class="filter" data-filter="Productivity">Productivity</button>
+    <button class="filter" data-filter="Video">Video</button>
+  </nav>
+  <section class="grid" id="grid">
+    <article class="card" data-name="ChatGPT Plus Go Pro" data-category="AI Tools"><div class="producticon">✳️</div><h3>ChatGPT</h3><p>AI plans and access options. Ask support for current availability.</p><a class="order" href="https://t.me/maherChatt" target="_blank" rel="noopener">Ask about plans ↗</a></article>
+    <article class="card" data-name="Spotify Premium" data-category="Entertainment"><div class="producticon">🎧</div><h3>Spotify</h3><p>Music subscription options and order assistance.</p><a class="order" href="https://t.me/maherChatt" target="_blank" rel="noopener">Ask about plans ↗</a></article>
+    <article class="card" data-name="Zoom Workplace Pro" data-category="Productivity"><div class="producticon">📹</div><h3>Zoom</h3><p>Workplace plans, including monthly and yearly options.</p><a class="order" href="https://t.me/maherChatt" target="_blank" rel="noopener">Ask about plans ↗</a></article>
+    <article class="card" data-name="Discord Nitro" data-category="Entertainment"><div class="producticon">🎮</div><h3>Discord Nitro</h3><p>Subscription options for your Discord account.</p><a class="order" href="https://t.me/maherChatt" target="_blank" rel="noopener">Ask about plans ↗</a></article>
+    <article class="card" data-name="CapCut Pro" data-category="Video"><div class="producticon">🎬</div><h3>CapCut Pro</h3><p>Video editing subscription options.</p><a class="order" href="https://t.me/maherChatt" target="_blank" rel="noopener">Ask about plans ↗</a></article>
+    <article class="card" data-name="Midjourney" data-category="AI Tools"><div class="producticon">🌌</div><h3>Midjourney</h3><p>AI image generation plans and availability.</p><a class="order" href="https://t.me/maherChatt" target="_blank" rel="noopener">Ask about plans ↗</a></article>
+    <article class="card" data-name="Other products subscriptions AI tools" data-category="AI Tools"><div class="producticon">✨</div><h3>Other products</h3><p>Looking for another digital tool? Contact support.</p><a class="order" href="https://t.me/maherChatt" target="_blank" rel="noopener">Request a product ↗</a></article>
+  </section>
+  <div class="empty" id="empty">No products found. Try another search.</div>
+  <div class="note">🔒 <strong>Order safely:</strong> Prices, availability, and delivery time are confirmed by support before payment. Never share passwords or one-time verification codes in this catalog.</div>
+  <footer class="footer">© MaherChat Shop · Digital products and customer support</footer>
+</main>
+<script>
+const search=document.getElementById('search'), cards=[...document.querySelectorAll('.card')], filters=[...document.querySelectorAll('.filter')], count=document.getElementById('count'), empty=document.getElementById('empty');let category='All';
+function update(){const q=search.value.trim().toLowerCase();let n=0;cards.forEach(c=>{const ok=(category==='All'||c.dataset.category===category)&&c.dataset.name.toLowerCase().includes(q);c.style.display=ok?'flex':'none';if(ok)n++});count.textContent=n+' product'+(n===1?'':'s');empty.style.display=n?'none':'block'}
+search.addEventListener('input',update);filters.forEach(b=>b.addEventListener('click',()=>{category=b.dataset.filter;filters.forEach(x=>x.classList.toggle('active',x===b));update()}));
+</script>
+</body>
+</html>
